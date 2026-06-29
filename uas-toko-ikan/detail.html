@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Produk - Raffi Aquatic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+                href="index.html">
+
+                Raffi Aquatic
+
+            </a>
+
+            <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="index.html">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="produk.html">
+                            Produk
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="cart.html">
+                            Keranjang
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- DETAIL PRODUK -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <img src="images/produk/cupang1.jpg"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <span class="badge bg-success mb-3">
+                        Stok Tersedia
+                    </span>
+
+                    <h1>
+                        Cupang Nemo
+                    </h1>
+
+                    <h3 class="price mb-4">
+                        Rp50.000
+                    </h3>
+
+                    <p>
+
+                        Cupang Nemo memiliki warna cerah
+                        dengan kombinasi merah, kuning,
+                        dan biru yang sangat menarik.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Ukuran : 4 - 5 cm</li>
+                        <li>Jenis : Cupang Hias</li>
+                        <li>Kondisi : Sehat</li>
+                        <li>Garansi : 24 Jam</li>
+
+                    </ul>
+
+                    <button
+                        class="btn btn-gold btn-lg mt-3"
+                        onclick="addToCart(
+                        'Cupang Nemo',
+                        50000,
+                        'images/produk/cupang1.jpg'
+                        )">
+
+                        Tambah Keranjang
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUK TERKAIT -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    Produk Terkait
+                </h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <div class="card product-card">
+
+                        <img src="images/produk/cupang2.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>
+                                Cupang Galaxy
+                            </h5>
+
+                            <p class="price">
+                                Rp60.000
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card product-card">
+
+                        <img src="images/produk/cupang3.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>
+                                Cupang Avatar
+                            </h5>
+
+                            <p class="price">
+                                Rp75.000
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+<section class="maps">
+
+       <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3980.127040162389!2d104.6197530747345!3d-3.994289995979458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwNTknMzkuNCJTIDEwNMKwMzcnMjAuNCJF!5e0!3m2!1sid!2sid!4v1781436678185!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <h5>Raffi Aquatic</h5>
+
+                    <p>
+                        Menyediakan berbagai jenis ikan hias
+                        berkualitas dengan pengiriman aman.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h5>Menu Cepat</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Beranda</a>
+                        </li>
+
+                        <li>
+                            <a href="produk.html">Produk</a>
+                        </li>
+
+                        <li>
+                            <a href="artikel.html">Artikel</a>
+                        </li>
+
+                        <li>
+                            <a href="kontak.html">Kontak</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h5>Kontak</h5>
+
+                    <p>0857 8324 8648</p>
+
+                    <p>
+                        raffiaquatic@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © 2026 Raffi Aquatic.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/cart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

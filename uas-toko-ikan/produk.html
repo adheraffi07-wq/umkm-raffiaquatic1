@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produk - Raffi Aquatic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<script src="js/cart.js"></script>
+<script src="js/produk.js"></script>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                Raffi Aquatic
+
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produk.html">
+                            Produk
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">
+                            Artikel
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">
+                            Kontak
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link position-relative" href="cart.html">
+
+                            <i class="bi bi-cart3"></i>
+
+                            <span id="cart-count" class="cart-badge">
+
+                                0
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <div class="container text-center">
+
+            <h1>Produk Kami</h1>
+
+            <p>
+                Pilihan ikan hias terbaik
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FILTER -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row mb-4">
+
+                <div class="col-md-6">
+
+                    <input type="text" id="searchInput" class="form-control" placeholder="Cari produk...">
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <select id="categoryFilter" class="form-select">
+
+                        <option value="all">
+                            Semua Kategori
+                        </option>
+
+                        <option value="Cupang">
+                            Cupang
+                        </option>
+
+                        <option value="Guppy">
+                            Guppy
+                        </option>
+
+                        <option value="Koi">
+                            Koi
+                        </option>
+
+                        <option value="Arwana">
+                            Arwana
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUK -->
+
+            <div class="row" id="productContainer">
+
+                <!-- Produk 1 -->
+
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Cupang">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/cupang halfmoon merah.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Cupang Halfmoon Merah
+                            </h5>
+
+                            <p class="price">
+                                Rp15.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+'Cupang Halfmoon Merah',
+15000,
+'images/produk/cupang halfmoon merah.jpg'
+)">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Produk 2 -->
+
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/cupang plakat blue rim.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Cupang Plakat Blue Rim
+                            </h5>
+
+                            <p class="price">
+                                Rp35.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Cupang Plakat Blue Rim',
+                                35000,
+                                'images/produk/cupang plakat blue rim'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- produk 3 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/guppy blue sky.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Guppy Blue Sky
+                            </h5>
+
+                            <p class="price">
+                                Rp35.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Guppy Blue Sky',
+                                35000,
+                                'images/produk/guppy blue sky.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- produk 4 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/guppy red dragon.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Guppy Red Dragon
+                            </h5>
+
+                            <p class="price">
+                                Rp35.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Guppy Red Dragon',
+                                35000,
+                                'images/produk/guppy red dragon.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- produk 5 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/koi.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                KOI
+                            </h5>
+
+                            <p class="price">
+                                Rp50.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'KOI',
+                                50000,
+                                'images/produk/koi.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- produk 6 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/arwana.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Arwana
+                            </h5>
+
+                            <p class="price">
+                                Rp100.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Arwana',
+                                100000,
+                                'images/produk/arwana.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- produk 7 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/channa.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Channa
+                            </h5>
+
+                            <p class="price">
+                                Rp70.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Channa',
+                                70000,
+                                'images/produk/channa.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- produk 8 -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item" data-category="Guppy">
+
+                    <div class="card product-card">
+
+                        <img src="/images/produk/pakan.jpg" class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5 class="product-name">
+                                Pakan
+                            </h5>
+
+                            <p class="price">
+                                Rp10.000
+                            </p>
+
+                            <a href="detail.html" class="btn btn-outline-primary w-100 mb-2">
+
+                                Detail
+
+                            </a>
+
+                            <button class="btn btn-gold w-100" onclick="addToCart(
+                                'Pakan',
+                                10000,
+                                'images/produk/pakan.jpg'
+                                )">
+
+                                Tambah Keranjang
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <section class="maps">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3980.127040162389!2d104.6197530747345!3d-3.994289995979458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwNTknMzkuNCJTIDEwNMKwMzcnMjAuNCJF!5e0!3m2!1sid!2sid!4v1781436678185!5m2!1sid!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <h5>Raffi Aquatic</h5>
+
+                    <p>
+                        Menyediakan berbagai jenis ikan hias
+                        berkualitas dengan pengiriman aman.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h5>Menu Cepat</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Beranda</a>
+                        </li>
+
+                        <li>
+                            <a href="produk.html">Produk</a>
+                        </li>
+
+                        <li>
+                            <a href="artikel.html">Artikel</a>
+                        </li>
+
+                        <li>
+                            <a href="kontak.html">Kontak</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h5>Kontak</h5>
+
+                    <p>0857 8324 8648</p>
+
+                    <p>
+                        raffiaquatic@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                © 2026 Raffi Aquatic.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/produk.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
